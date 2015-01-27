@@ -1,5 +1,4 @@
 // Greatest Common Divisor
-
 package math
 
 func GCD(a, b int) int {

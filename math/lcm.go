@@ -1,5 +1,4 @@
 // Least Common Multiple
-
 package math
 
 func LCM(a, b int) int {
