@@ -23,15 +23,15 @@ func GetPrimeNumbers(value int) []int {
 	var primeNumbers []int
 	ch := make(chan int)
 	go generate(ch)
-	for i := 0; i < value; i++ {
+	for {
 		prime := <-ch
+		if prime > value {
+			break
+		}
 		primeNumbers = append(primeNumbers, prime)
 		ch1 := make(chan int)
 		go filter(ch, ch1, prime)
 		ch = ch1
-		if prime > value {
-			break
-		}
 	}
 	return primeNumbers
 }
@@ -44,13 +44,13 @@ func getPrimeNumberHash(value int) map[int]bool {
 	go generate(ch)
 	for {
 		prime := <-ch
+		if prime > value {
+			break
+		}
 		primeNumbers[prime] = true
 		ch1 := make(chan int)
 		go filter(ch, ch1, prime)
 		ch = ch1
-		if prime > value {
-			break
-		}
 	}
 	return primeNumbers
 }

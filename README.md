@@ -15,3 +15,5 @@ go get github.com/AbhiAgarwal/algo
 	- Binomial Coefficient
 	- Least Common Multiple (LCM)
 	- Greatest Common Divisor (GCD)
+- Data Structures
+	- [Union Find](https://github.com/abhiagarwal/go-unionfind)
