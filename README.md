@@ -3,7 +3,7 @@
 Collections of algorithms to easily use in Go. I haven't implemented all of them myself, and have referenced the ones I've borrowed.
 
 ```
-go get github.com/AbhiAgarwal/alGO
+go get github.com/AbhiAgarwal/algo
 ```
 
 **Algorithm's Implemented**
@@ -11,3 +11,7 @@ go get github.com/AbhiAgarwal/alGO
 - Sort
 	- Mergesort
 	- Quicksort
+- Math
+	- Binomial Coefficient
+	- Least Common Multiple (LCM)
+	- Greatest Common Divisor (GCD)
