@@ -17,3 +17,4 @@ go get github.com/AbhiAgarwal/algo
 	- Greatest Common Divisor (GCD)
 - Data Structures
 	- [Union Find](https://github.com/abhiagarwal/go-unionfind)
+	- Fenwich Tree
