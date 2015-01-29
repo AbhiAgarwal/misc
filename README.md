@@ -6,7 +6,7 @@ Collections of algorithms to easily use in Go. I haven't implemented all of them
 go get github.com/AbhiAgarwal/algo
 ```
 
-**Algorithm's Implemented**
+**Algorithms Implemented**
 
 - Sort
 	- Mergesort
@@ -18,3 +18,6 @@ go get github.com/AbhiAgarwal/algo
 - Data Structures
 	- [Union Find](https://github.com/abhiagarwal/go-unionfind)
 	- Fenwich Tree
+	- AVL tree
+- Graph
+	- Dijkstra's algorithm
