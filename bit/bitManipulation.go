@@ -13,7 +13,7 @@ func SetBit(S int, j uint64) int {
 }
 
 func ClearBit(S int, j uint64) int {
-	S &= !(1 << j)
+	S &= ^(1 << j)
 	return S
 }
 
@@ -27,20 +27,20 @@ func LowBit(S int) int {
 }
 
 func SetAll(S int, j uint64) int {
-	S = (1 << n) - 1
+	S = (1 << j) - 1
 	return S
 }
 
-func Modulo(S int, j uint64) int {
-	return (S) & (N - 1)
+func Modulo(S int, j int) int {
+	return (S) & (j - 1)
 }
 
 func IsPowerOfTwo(S int) int {
-	return !(S & (S - 1))
+	return ^(S & (S - 1))
 }
 
-func NearestPowerOfTwo(S int) int {
-	return math.Pow(2.0, ((math.Log(S) / math.Log(2.0)) + 0.5))
+func NearestPowerOfTwo(S int) float64 {
+	return math.Pow(2.0, float64(((math.Log(float64(S)) / math.Log(2.0)) + 0.5)))
 }
 
 func TurnOffLastBit(S int) int {
