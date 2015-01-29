@@ -21,6 +21,7 @@ go get github.com/AbhiAgarwal/algo
 	- [Union Find](https://github.com/abhiagarwal/go-unionfind)
 	- Fenwich Tree
 	- AVL tree
+	- Priority Queue
 - Graph
 	- Dijkstra's algorithm
 - Bits
