@@ -16,7 +16,7 @@ go get github.com/AbhiAgarwal/algo
 	- Least Common Multiple (LCM)
 	- Greatest Common Divisor (GCD)
 	- Prime Sieve
-	- IsPrime
+	- Prime number checker
 - Data Structures
 	- [Union Find](https://github.com/abhiagarwal/go-unionfind)
 	- Fenwich Tree
@@ -26,3 +26,5 @@ go get github.com/AbhiAgarwal/algo
 	- Dijkstra's algorithm
 - Bits
 	- Bit manipulation functions
+- Misc
+	- Palindrome checker
