@@ -30,3 +30,35 @@ func TestInsert(t *testing.T) {
 		t.Error("Misplaced!")
 	}
 }
+
+func TestRemove(t *testing.T) {
+	var tree *AVLNode
+	AVLInsert(&tree, intKey(5))
+	AVLInsert(&tree, intKey(4))
+	AVLInsert(&tree, intKey(9))
+	AVLInsert(&tree, intKey(100))
+
+	if tree.Data != intKey(5) {
+		t.Error("Misplaced!")
+	}
+	if tree.Link[0].Data != intKey(4) {
+		t.Error("Misplaced!")
+	}
+	if tree.Link[1].Data != intKey(9) {
+		t.Error("Misplaced!")
+	}
+	if tree.Link[1].Link[1].Data != intKey(100) {
+		t.Error("Misplaced!")
+	}
+
+	AVLRemove(&tree, intKey(5))
+	AVLRemove(&tree, intKey(4))
+
+	if tree.Data != intKey(9) {
+		t.Error("Misplaced!")
+	}
+
+	if tree.Link[1].Data != intKey(100) {
+		t.Error("Misplaced!")
+	}
+}
