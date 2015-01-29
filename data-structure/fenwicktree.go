@@ -1,7 +1,5 @@
 package datastructure
 
-import "fmt"
-
 type FenwickTree struct {
 	Ft []int
 }
@@ -38,11 +36,4 @@ func (f *FenwickTree) Adjust(k, v int) {
 	for ; k < len(f.Ft); k += (k & (-k)) {
 		f.Ft[k] += v
 	}
-}
-
-func main() {
-	fenwichTree := NewFenwickTree()
-	fenwichTree.FenwickTree(5)
-	fenwichTree.Adjust(5, 2)
-	fmt.Println(fenwichTree.Rsq(5, 2))
 }

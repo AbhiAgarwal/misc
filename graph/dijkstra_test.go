@@ -6,7 +6,7 @@ import (
 )
 
 func TestDijkstra(t *testing.T) {
-	graph := []Edge{
+	graph := []edge{
 		{"a", "b", 7},
 		{"a", "c", 9},
 		{"a", "f", 14},
@@ -23,7 +23,7 @@ func TestDijkstra(t *testing.T) {
 	findAll := false
 
 	// construct linked representation of example data
-	allNodes, startNode, endNode := LinkGraph(graph, directed, start, end)
+	allNodes, startNode, endNode := linkGraph(graph, directed, start, end)
 	if len(allNodes) != 6 {
 		t.Error("Wrong number of All Nodes")
 	}
