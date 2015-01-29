@@ -1,5 +1,4 @@
 // http://stackoverflow.com/questions/15802890/idiomatic-quicksort-in-go
-
 package sort
 
 import (

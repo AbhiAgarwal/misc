@@ -1,5 +1,4 @@
 // http://austingwalters.com/merge-sort-in-go-golang/
-
 package sort
 
 func merge(left, right []int) []int {
