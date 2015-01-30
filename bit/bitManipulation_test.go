@@ -7,7 +7,3 @@ func TestIsOn(t *testing.T) {
 		t.Error("Wrong manipulation")
 	}
 }
-
-func TestSetBit(t *testing.T) {
-	SetBit(01100, 0)
-}
