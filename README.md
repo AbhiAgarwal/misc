@@ -8,23 +8,25 @@ go get github.com/AbhiAgarwal/algo
 
 **Algorithms Implemented**
 
+- Bits
+	- Bit manipulation functions
+- Data Structures
+	- AVL tree
+	- Fenwich Tree
+	- Priority Queue
+	- Union Find
+- Graph
+	- Dijkstra's algorithm
+- Math
+	- Binomial Coefficient
+	- Greatest Common Divisor (GCD)
+	- Least Common Multiple (LCM)
+	- Prime Sieve
+	- Prime number checker
+- Misc
+	- Palindrome checker
+- Search
+	- Binary Search
 - Sort
 	- Mergesort
 	- Quicksort
-- Math
-	- Binomial Coefficient
-	- Least Common Multiple (LCM)
-	- Greatest Common Divisor (GCD)
-	- Prime Sieve
-	- Prime number checker
-- Data Structures
-	- [Union Find](https://github.com/abhiagarwal/go-unionfind)
-	- Fenwich Tree
-	- AVL tree
-	- Priority Queue
-- Graph
-	- Dijkstra's algorithm
-- Bits
-	- Bit manipulation functions
-- Misc
-	- Palindrome checker
