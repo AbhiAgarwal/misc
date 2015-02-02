@@ -1,8 +1,4 @@
+P=github.com/AbhiAgarwal/algo
+
 test:
-	go test github.com/AbhiAgarwal/algo/bit
-	go test github.com/AbhiAgarwal/algo/data-structure
-	go test github.com/AbhiAgarwal/algo/graph
-	go test github.com/AbhiAgarwal/algo/math
-	go test github.com/AbhiAgarwal/algo/misc
-	go test github.com/AbhiAgarwal/algo/search
-	go test github.com/AbhiAgarwal/algo/sort
+	go test $P/bit $P/data-structure $P/graph $P/math $P/misc $P/search $P/sort

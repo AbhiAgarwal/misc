@@ -37,8 +37,14 @@ type path struct {
 // ndList implements container/heap
 type ndList []*node
 
-func (n ndList) Len() int           { return len(n) }
-func (n ndList) Less(i, j int) bool { return n[i].tent < n[j].tent }
+func (n ndList) Len() int {
+	return len(n)
+}
+
+func (n ndList) Less(i, j int) bool {
+	return n[i].tent < n[j].tent
+}
+
 func (n ndList) Swap(i, j int) {
 	n[i], n[j] = n[j], n[i]
 	n[i].rx = i
@@ -97,7 +103,7 @@ func linkGraph(graph []edge, directed bool,
 	return allnodes, all[start], all[end]
 }
 
-// dijkstra is a heap-enhanced version of Dijkstra's shortest path algorithm.
+// Dijkstra is a heap-enhanced version of Dijkstra's shortest path algorithm.
 //
 // If endnode is specified, only a single path is returned.
 // If endnode is nil, paths to all nodes are returned.

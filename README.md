@@ -21,6 +21,7 @@ go get github.com/AbhiAgarwal/algo
 	- Binomial Coefficient
 	- Greatest Common Divisor (GCD)
 	- Least Common Multiple (LCM)
+	- Matrix Definition
 	- Prime Sieve
 	- Prime number checker
 - Misc
