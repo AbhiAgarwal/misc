@@ -28,6 +28,8 @@ go get github.com/AbhiAgarwal/algo
 	- Palindrome checker
 - Search
 	- Binary Search
+	- KMP Algorithm
+	- Suffix Tree
 - Sort
 	- Mergesort
 	- Quicksort
